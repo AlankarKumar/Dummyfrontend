@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:500');
+
+html *{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.listofemployer {
+    grid-area: sidebar;
+    -webkit-box-shadow: 4px 5px 26px 0px rgba(110,110,110,1);
+    -moz-box-shadow: 4px 5px 26px 0px rgba(110,110,110,1);
+    box-shadow: 4px 5px 26px 0px rgba(110,110,110,1);
+    background: #a3ffa0;
+    align-items: center;
+
+}
+
+
+.topNav{
+    grid-area: header;
+    -webkit-box-shadow: 4px 5px 26px 0px rgba(110,110,110,1);
+    -moz-box-shadow: 4px 5px 26px 0px rgba(110,110,110,1);
+    box-shadow: 4px 5px 26px 0px rgba(110,110,110,1);
+    place-self:center;
+}
+
+.categoryUnit{
+    grid-area: category;
+    border: 2px solid black;
+    grid-gap: 10px;
+    background-color: blue;
+}
+
+.funcarea{
+    -webkit-box-shadow: 4px 5px 26px 0px rgba(110,110,110,1);
+    -moz-box-shadow: 4px 5px 26px 0px rgba(110,110,110,1);
+    box-shadow: 4px 5px 26px 0px rgba(110,110,110,1);
+    background: #a3ffa0;
+    grid-area: func_area;
+
+    
+}
+
+.subcategory{
+    background-color:#a3ffa0;
+    -webkit-box-shadow: 4px 5px 26px 0px rgba(110,110,110,1);
+    -moz-box-shadow: 4px 5px 26px 0px rgba(110,110,110,1);
+    box-shadow: 4px 5px 26px 0px rgba(110,110,110,1);
+    grid-area: sub_category;
+    
+}
+
+.businessRule{
+    grid-area: businessrule;
+    -webkit-box-shadow: 4px 5px 26px 0px rgba(110,110,110,1);
+    -moz-box-shadow: 4px 5px 26px 0px rgba(110,110,110,1);
+    box-shadow: 4px 5px 26px 0px rgba(110,110,110,1);
+    background-color: #a3ffa0;
+}
+
+
+
+.container {
+    display: grid;
+    grid-template-rows:  1fr 4fr 5fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "header header header"
+        "sidebar func_area sub_category"
+        "sidebar businessrule businessrule";
+    grid-gap: 10px 10px;
+}
+
+
+
+
